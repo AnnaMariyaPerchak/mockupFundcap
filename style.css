@@ -1,0 +1,796 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("./fonts/Roboto/Roboto-Regular.ttf");
+  }
+
+  body {
+    background-image: url("./images/background.png");
+    background-color: #f1f3f6;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: "Roboto";
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 400;
+    letter-spacing: 0.015em;
+    color: #f1f3f6;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  header {
+    margin-left: 90px;
+    margin-top: 30px;
+    margin-bottom: 140px;
+  }
+
+  header .hamburgerMenu {
+    visibility: hidden;
+    height: 0;
+  }
+
+  header .nav {
+    margin-right: 85px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  header .nav .logo {
+    margin-right: 40px;
+  }
+
+  header .nav a {
+    text-decoration: none;
+    color: lightgrey;
+    margin-left: 50px;
+    font-size: 20px;
+  }
+
+  header .nav a.aboutUs {
+    margin-right: 220px;
+  }
+
+  header .nav a:active {
+    font-weight: 600;
+    color: black;
+  }
+
+  header .nav__button {
+    width: 150px;
+    height: 50px;
+    border: 3px solid lightgrey;
+    background-color: white;
+    opacity: 0.8;
+    color: lightgrey;
+    margin-left: 30px;
+    font-family: "Roboto";
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    letter-spacing: 0.015em;
+  }
+
+  .freeTrial {
+    margin-left: 90px;
+    margin-bottom: 40px;
+  }
+
+  .freeTrial__info {
+    font-size: 40px;
+    line-height: 47px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    width: 45%;
+  }
+
+  .freeTrial__button {
+    width: 220px;
+    height: 60px;
+    border: 3px solid white;
+    background-color: white;
+    color: black;
+    font-family: "Roboto";
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    letter-spacing: 0.015em;
+  }
+
+  .details {
+    margin-top: 50px;
+    margin-left: 90px;
+    color: black;
+  }
+
+  .details__block {
+    padding: 100px 150px 100px 100px;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .details__block .title {
+    font-weight: 600;
+  }
+
+  .details__block .moreInfo {
+    width: 85%;
+  }
+
+  .fundsSPVs {
+    background: -webkit-gradient(linear, left top, right top, color-stop(98%, #f1f3f6), color-stop(0, lightgrey));
+    background: linear-gradient(to right, #f1f3f6 98%, lightgrey 0);
+    background-size: 175px 100%;
+    padding: 110px 50px 165px 90px;
+    color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .fundsSPVs__title {
+    font-size: 40px;
+    line-height: 47px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    width: 77%;
+  }
+
+  .fundsSPVs__info {
+    margin-left: 150px;
+  }
+
+  .fundsSPVs__info .moreInfo {
+    width: 70%;
+  }
+
+  .fundsSPVs__info .categories {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .fundsSPVs__info .categories__2 {
+    margin-left: 70px;
+  }
+
+  .fundsSPVs__info .categories .category {
+    background-repeat: no-repeat;
+    background-image: url("./images/right-arrow-in-a-circle.png");
+    padding-left: 20px;
+    background-size: 14px;
+  }
+
+  .investmentEntities {
+    background-color: #f1f3f6;
+    margin-left: 90px;
+  }
+
+  .investmentEntities__block {
+    padding: 120px 140px 100px 100px;
+    background-color: white;
+  }
+
+  .investmentEntities__block__title {
+    font-size: 40px;
+    line-height: 47px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    width: 77%;
+    color: black;
+  }
+
+  .investmentEntities__block .moreInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .investmentEntities__block .moreInfo__structure .title, .investmentEntities__block .moreInfo__launch .title {
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  .investmentEntities__block .moreInfo__structure .info, .investmentEntities__block .moreInfo__launch .info {
+    color: black;
+    width: 85%;
+  }
+
+  .background {
+    background-image: url("./images/background.png");
+    padding: 140px 125px 100px 125px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .statistics {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .statistics__1, .statistics__2 {
+    margin-right: 150px;
+  }
+
+  .statistics .number {
+    font-size: 79px;
+    line-height: 47px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-align: center;
+  }
+
+  .statistics .text {
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .dealmaking {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 140px 140px 150px 90px;
+    background: -webkit-gradient(linear, left top, right top, color-stop(98%, #f1f3f6), color-stop(0, lightgrey));
+    background: linear-gradient(to right, #f1f3f6 98%, lightgrey 0);
+    background-size: 175px 100%;
+    color: black;
+  }
+
+  .dealmaking__title {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+  }
+
+  .dealmaking__info {
+    font-size: 26px;
+    line-height: 35px;
+    margin-left: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .addInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #181024;
+    padding: 220px 90px 200px 90px;
+  }
+
+  .addInfo__categories {
+    display: -ms-grid;
+    display: grid;
+    width: 35%;
+  }
+
+  .addInfo__categories__1, .addInfo__categories__2, .addInfo__categories__3, .addInfo__categories__4 {
+    text-decoration: none;
+    color: lightgrey;
+    margin-left: 50px;
+    font-size: 20px;
+  }
+
+  .addInfo__categories__1:active, .addInfo__categories__2:active, .addInfo__categories__3:active, .addInfo__categories__4:active {
+    font-weight: 600;
+    color: black;
+  }
+
+  .addInfo__info {
+    width: 65%;
+  }
+
+  .addInfo__info img {
+    width: 100px;
+  }
+
+  .addInfo__info__text {
+    width: 80%;
+    line-height: 30px;
+    font-size: 21px;
+  }
+
+  .structureTransaction {
+    background-color: white;
+    padding: 90px 70px 65px 95px;
+  }
+
+  .structureTransaction__title {
+    font-size: 40px;
+    line-height: 47px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    width: 65%;
+    color: black;
+    margin-bottom: 80px;
+  }
+
+  .structureTransaction__text {
+    color: black;
+    font-size: 22px;
+    line-height: 32px;
+    width: 65%;
+    margin-bottom: 75px;
+  }
+
+  .structureTransaction__inputForm__email {
+    width: 625px;
+    height: 60px;
+    padding: 6px 0 4px 21px;
+    border: 1px solid #f1f3f6;
+    background: #F6F6f6;
+    border-radius: 12px;
+    margin-right: 40px;
+    font-family: "Roboto";
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 400;
+    letter-spacing: 0.015em;
+  }
+
+  .structureTransaction__inputForm__button {
+    font-family: "Roboto";
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 400;
+    letter-spacing: 0.015em;
+    width: 240px;
+    height: 60px;
+    color: #f1f3f6;
+    background-color: black;
+    border: 3px solid black;
+  }
+
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    header {
+      margin-left: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    header .nav {
+      visibility: hidden;
+      height: 0;
+    }
+    header .hamburgerMenu {
+      visibility: visible;
+      font-family: "Roboto";
+      font-size: 20px;
+      line-height: 25px;
+      font-weight: 400;
+      letter-spacing: 0.015em;
+    }
+    header .hamburgerMenu .menuToggle {
+      display: block;
+      position: relative;
+      top: 50px;
+      left: 50px;
+      z-index: 1;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+    }
+    header .hamburgerMenu .menuToggle a {
+      text-decoration: none;
+      color: #232323;
+      -webkit-transition: color 0.3s ease;
+      transition: color 0.3s ease;
+    }
+    header .hamburgerMenu .menuToggle a:hover {
+      color: tomato;
+    }
+    header .hamburgerMenu .menuToggle input {
+      display: block;
+      width: 40px;
+      height: 32px;
+      position: absolute;
+      top: -7px;
+      left: -5px;
+      cursor: pointer;
+      opacity: 0;
+      /* hide this */
+      z-index: 2;
+      /* and place it over the hamburger */
+      -webkit-touch-callout: none;
+    }
+    header .hamburgerMenu .menuToggle span {
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
+      background: #cdcdcd;
+      border-radius: 3px;
+      z-index: 1;
+      -webkit-transform-origin: 4px 0px;
+              transform-origin: 4px 0px;
+      -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+      transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    }
+    header .hamburgerMenu .menuToggle span:first-child {
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+    }
+    header .hamburgerMenu .menuToggle span:nth-last-child(2) {
+      -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%;
+    }
+    header .hamburgerMenu .menuToggle input:checked ~ span {
+      opacity: 1;
+      -webkit-transform: rotate(45deg) translate(-2px, -1px);
+              transform: rotate(45deg) translate(-2px, -1px);
+      background: #232323;
+    }
+    header .hamburgerMenu .menuToggle input:checked ~ span:nth-last-child(3) {
+      opacity: 0;
+      -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+              transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    header .hamburgerMenu .menuToggle input:checked ~ span:nth-last-child(2) {
+      -webkit-transform: rotate(-45deg) translate(0, -1px);
+              transform: rotate(-45deg) translate(0, -1px);
+    }
+    header .hamburgerMenu .menu {
+      position: absolute;
+      width: 300px;
+      margin: -100px 0 0 -50px;
+      padding: 50px;
+      padding-top: 125px;
+      background: #ededed;
+      list-style-type: none;
+      -webkit-font-smoothing: antialiased;
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+      -webkit-transform: translate(-100%, 0);
+              transform: translate(-100%, 0);
+      -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+      transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    }
+    header .hamburgerMenu .menu li {
+      padding: 10px 0;
+      font-size: 22px;
+    }
+    header .hamburgerMenu .menu__button {
+      width: 150px;
+      height: 50px;
+      border: 1px solid black;
+      background-color: #f1f3f6;
+      color: black;
+      margin-left: 0;
+      font-family: "Roboto";
+      font-size: 20px;
+      line-height: 25px;
+      font-weight: 400;
+      letter-spacing: 0.015em;
+    }
+    header .hamburgerMenu .menuToggle input:checked ~ ul {
+      -webkit-transform: none;
+              transform: none;
+    }
+    .freeTrial__info {
+      width: 75%;
+    }
+    .details__block {
+      padding-right: 0px;
+    }
+    .fundsSPVs {
+      padding-right: 0;
+    }
+    .fundsSPVs__info .moreInfo {
+      width: 100%;
+    }
+    .fundsSPVs__info .categories {
+      display: inline;
+    }
+    .fundsSPVs__info .categories__2 {
+      margin-left: 0;
+    }
+    .investmentEntities__block {
+      padding-right: 0;
+    }
+    .statistics__1, .statistics__2 {
+      margin-right: 0;
+    }
+    .statistics__2, .statistics__3 {
+      margin-left: 60px;
+    }
+    .dealmaking {
+      display: inherit;
+    }
+    .dealmaking__info {
+      margin-left: 0;
+    }
+    .addInfo {
+      padding: 150px 0 150px 90px;
+    }
+    .addInfo__info {
+      margin-left: 50px;
+    }
+    .structureTransaction {
+      padding: 40px 25px 40px 25px;
+    }
+    .structureTransaction__title {
+      width: 100%;
+    }
+    .structureTransaction__text {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    .structureTransaction__inputForm {
+      display: -ms-grid;
+      display: grid;
+    }
+    .structureTransaction__inputForm__email {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+    .structureTransaction__inputForm__button {
+      margin: 0 auto;
+    }
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    body {
+      background-size: auto;
+      font-size: 30px;
+      line-height: 30px;
+    }
+    header {
+      margin-left: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    header .nav {
+      visibility: hidden;
+      height: 0;
+    }
+    header .hamburgerMenu {
+      visibility: visible;
+      font-family: "Roboto";
+      font-size: 30px;
+      line-height: 25px;
+      font-weight: 400;
+      letter-spacing: 0.015em;
+    }
+    header .hamburgerMenu .menuToggle {
+      display: block;
+      position: relative;
+      top: 30px;
+      left: 15px;
+      z-index: 1;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+    }
+    header .hamburgerMenu .menuToggle a {
+      text-decoration: none;
+      color: #232323;
+      -webkit-transition: color 0.3s ease;
+      transition: color 0.3s ease;
+    }
+    header .hamburgerMenu .menuToggle a:hover {
+      color: tomato;
+    }
+    header .hamburgerMenu .menuToggle input {
+      display: block;
+      width: 40px;
+      height: 32px;
+      position: absolute;
+      top: -7px;
+      left: -5px;
+      cursor: pointer;
+      opacity: 0;
+      /* hide this */
+      z-index: 2;
+      /* and place it over the hamburger */
+      -webkit-touch-callout: none;
+    }
+    header .hamburgerMenu .menuToggle span {
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
+      background: #cdcdcd;
+      border-radius: 3px;
+      z-index: 1;
+      -webkit-transform-origin: 4px 0px;
+              transform-origin: 4px 0px;
+      -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+      transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    }
+    header .hamburgerMenu .menuToggle span:first-child {
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+    }
+    header .hamburgerMenu .menuToggle span:nth-last-child(2) {
+      -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%;
+    }
+    header .hamburgerMenu .menuToggle input:checked ~ span {
+      opacity: 1;
+      -webkit-transform: rotate(45deg) translate(-2px, -1px);
+              transform: rotate(45deg) translate(-2px, -1px);
+      background: #232323;
+    }
+    header .hamburgerMenu .menuToggle input:checked ~ span:nth-last-child(3) {
+      opacity: 0;
+      -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+              transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    header .hamburgerMenu .menuToggle input:checked ~ span:nth-last-child(2) {
+      -webkit-transform: rotate(-45deg) translate(0, -1px);
+              transform: rotate(-45deg) translate(0, -1px);
+    }
+    header .hamburgerMenu .menu {
+      position: absolute;
+      width: 300px;
+      margin: -100px 0 0 -50px;
+      padding: 50px;
+      padding-top: 125px;
+      background: #ededed;
+      list-style-type: none;
+      -webkit-font-smoothing: antialiased;
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+      -webkit-transform: translate(-100%, 0);
+              transform: translate(-100%, 0);
+      -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+      transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    }
+    header .hamburgerMenu .menu li {
+      padding: 10px 0;
+      font-size: 22px;
+    }
+    header .hamburgerMenu .menu__button {
+      width: 150px;
+      height: 50px;
+      border: 1px solid black;
+      background-color: #f1f3f6;
+      color: black;
+      margin-left: 0;
+      font-family: "Roboto";
+      font-size: 20px;
+      line-height: 25px;
+      font-weight: 400;
+      letter-spacing: 0.015em;
+    }
+    header .hamburgerMenu .menuToggle input:checked ~ ul {
+      -webkit-transform: none;
+              transform: none;
+    }
+    .freeTrial {
+      width: 100%;
+      margin-left: 60px;
+    }
+    .freeTrial__info {
+      width: 100%;
+    }
+    .freeTrial__button {
+      font-size: 30px;
+      line-height: 3px;
+    }
+    .details {
+      margin-left: 60px;
+      width: 100%;
+    }
+    .details__block {
+      padding: 50px 75px 50px 50px;
+      display: -ms-grid;
+      display: grid;
+      width: 100%;
+    }
+    .fundsSPVs {
+      display: -ms-grid;
+      display: grid;
+      padding: 55px 25px 80px 60px;
+    }
+    .fundsSPVs__title {
+      width: 100%;
+    }
+    .fundsSPVs__info {
+      margin-left: 0;
+    }
+    .fundsSPVs__info .moreInfo {
+      width: 100%;
+    }
+    .investmentEntities {
+      margin-left: 60px;
+      width: 100%;
+    }
+    .investmentEntities__block {
+      padding: 60px 70px 50px 50px;
+      width: 100%;
+    }
+    .investmentEntities__block .moreInfo {
+      display: -ms-grid;
+      display: grid;
+    }
+    .investmentEntities__block .moreInfo__structure .title, .investmentEntities__block .moreInfo__launch .title {
+      font-size: 33px;
+    }
+    .investmentEntities__block .moreInfo__structure .info, .investmentEntities__block .moreInfo__launch .info {
+      width: 100%;
+    }
+    .background {
+      width: 100%;
+    }
+    .statistics {
+      display: -ms-grid;
+      display: grid;
+      width: 100%;
+    }
+    .statistics__1, .statistics__2 {
+      margin-right: 0px;
+    }
+    .dealmaking {
+      display: -ms-grid;
+      display: grid;
+      padding-left: 60px;
+      width: 100%;
+    }
+    .dealmaking__info {
+      margin-left: 0px;
+      font-size: 30px;
+    }
+    .addInfo {
+      display: -ms-grid;
+      display: grid;
+      width: 100%;
+      padding-left: 60px;
+    }
+    .addInfo__categories {
+      display: -ms-grid;
+      display: grid;
+      width: 100%;
+    }
+    .addInfo__info {
+      width: 100%;
+    }
+    .structureTransaction {
+      width: 100%;
+      padding-left: 60px;
+    }
+    .structureTransaction__title {
+      width: 100%;
+    }
+    .structureTransaction__text {
+      width: 100%;
+    }
+    .structureTransaction__inputForm__email {
+      width: 100%;
+    }
+    .structureTransaction__inputForm__button {
+      font-size: 30px;
+    }
+  }
+  /*# sourceMappingURL=style.css.map */
